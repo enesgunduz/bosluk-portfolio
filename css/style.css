@@ -15,6 +15,9 @@ body {
   font-size: 18px;
   background-color: white;
 }
+html{
+  scroll-behavior: smooth;
+}
 p {
   line-height: 1.5;
 }
@@ -23,7 +26,7 @@ p {
   font-weight: bold;
   margin-bottom: 50px;
 }
-#contact {
+#contact-btn {
   color: white;
   font-weight: bold;
   border-radius: 25px;
@@ -68,7 +71,10 @@ p {
   text-decoration: none;
   color: black;
   margin-right: 25px;
-  transition: 0.3s;
+  /* transition: 0.3s; */
+}
+.nav-menu a:hover {
+  border-bottom: 2px solid ;
 }
 
 /* Menu Icon  */
@@ -170,10 +176,7 @@ p {
   background-color: #ddd;
   transition: 1s;
 }
-.service-item h5{
-  margin-bottom: 15px;
-  font-size: 1.2em;
-}
+
 
 
 /* Blog */
@@ -204,12 +207,52 @@ p {
 
 /* Footer */
 .footer {
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .footer .logo-wrapper .name {
   font-size: 1.2em;
+}
+.footer-menu a{
+  font-size: 1em;
+  text-decoration: none;
+  color: black;
+  margin-right: 15px;
+}
+.footer #contact-footer{
+  text-decoration: underline;
+}
+/* Contact */
+
+form input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+form input[type=submit] {
+  background-color: #7423ff;;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form input[type=submit]:hover {
+  background-color: #7423ff;;
+}
+
+.contact {
+  border-radius: 5px;
+  padding: 20px;
 }
 
 
@@ -255,8 +298,15 @@ p {
   .blog-date{
     margin-top: 30px;
   }
-  .footer .logo-wrapper .name {
-    font-size: 1em;
+  .footer  {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 0.9em;
+  }
+  .footer .footer-menu{
+    margin-bottom:10px;
   }
 }
 
