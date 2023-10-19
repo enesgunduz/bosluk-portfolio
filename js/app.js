@@ -1,12 +1,3 @@
-document.addEventListener(“scroll”, lazyload);
-
-
-window.addEventListener(“resize”, lazyload);
-
-
-window.addEventListener(“orientationChange”, lazyload);
-
-
 const menuIcon = document.querySelector('.menu-icon')
 const closeIcon = document.querySelector('.close-icon')
 const menu = document.querySelector('.nav-menu')
