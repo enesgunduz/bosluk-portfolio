@@ -9,7 +9,6 @@ menuIcon.addEventListener('click', () => {
 
 titles.forEach(title => {
   title.addEventListener('click', () => {
-    console.log(title.parentElement.parentElement)
     title.parentElement.parentElement.classList.toggle('active')
   })
   
